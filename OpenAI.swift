@@ -9,12 +9,13 @@ import Foundation
 import Alamofire
 
 final class OpenAI {
-    
+
+    // Make sure to add your own api key here or use 'changeKey()' somewhen in your code
     private static var apiKey: String = ""
     
     private let chatCompletionURL: String = "https://api.openai.com/v1/chat/completions"
     
-    func changeHey(newKey: String) {
+    func changeKey(newKey: String) {
         OpenAI.apiKey = newKey
     }
     
